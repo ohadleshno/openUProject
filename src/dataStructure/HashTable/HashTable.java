@@ -6,6 +6,12 @@ public class HashTable {
     private int size;
 
 
+    /**
+     * constructor
+     * for every word in the array insert it into the table with the insert function
+     * @param words
+     * @throws HashTableException
+     */
     public HashTable(String[] words) throws HashTableException {
         this.size = words.length * 2;
         this.table = new String[words.length * 2];
@@ -15,6 +21,11 @@ public class HashTable {
         }
     }
 
+    /**
+     * checks if hash table contains key
+     * @param key
+     * @return true if exists otherwise returns false
+     */
     public boolean contains(String key) {
         int j = doubleHash(key, 0);
         int i = 1;
@@ -29,6 +40,11 @@ public class HashTable {
     }
 
 
+    /**
+     * insert key into the hashTable
+     * @param key
+     * @throws HashTableException if no more space in the hashTable
+     */
     public void insert(String key) throws HashTableException {
         int i = 0;
 
@@ -44,6 +60,12 @@ public class HashTable {
         throw new HashTableException("dont have space");
     }
 
+    /**
+     * does hash for the key and for i
+     * @param key
+     * @param i
+     * @return
+     */
     private int doubleHash(String key, int i) {
         int hash = (hash(key) + i * hash(key)) % size;
         if (hash < 0) {
@@ -52,6 +74,11 @@ public class HashTable {
         return hash;
     }
 
+    /**
+     * hash the value
+     * @param value
+     * @return
+     */
     private int hash(String value) {
         int h = 0;
         for (char v : value.toCharArray()) {

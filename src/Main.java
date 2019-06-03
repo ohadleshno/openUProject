@@ -15,25 +15,20 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException, HashTableException {
-        String[] dictionaryWords = FileUtil.createHashMapDict(DICTIONARY_FILE_PATH);
+        String[] dictionaryWords = FileUtil.getAllWordsFromFiles(DICTIONARY_FILE_PATH);
         HashTable dictionary = new HashTable(dictionaryWords);
-        String[] wordsFromTextFile = FileUtil.createHashMapDict(MTEXT_FILE_FILE_PATH);
+        String[] wordsFromTextFile = FileUtil.getAllWordsFromFiles(MTEXT_FILE_FILE_PATH);
         RedBlackTree tree = new RedBlackTree(wordsFromTextFile);
         removeWordsInTree(dictionary, tree);
         System.out.println("The following words doesn't exist: ");
         tree.printTree();
     }
 
-    private static TreeSet<String> createTree(String[] textWords) {
-        TreeSet<String> words = new TreeSet<>();
-
-        for (String textWord : textWords) {
-            words.add(textWord);
-        }
-
-        return words;
-    }
-
+    /**
+     * removes nodes in tree where there value is in the dictionary
+     * @param dictionary
+     * @param tree
+     */
     private static void removeWordsInTree(HashTable dictionary, RedBlackTree tree) {
         List<RedBlackTreeNode> allNodes = tree.getAllNodes();
         for (RedBlackTreeNode node : allNodes) {

@@ -18,8 +18,22 @@ public class RedBlackTree {
         }
     }
 
+    /**
+     * @return all nodes in the tree
+     */
+    public List<RedBlackTreeNode> getAllNodes() {
+        List<RedBlackTreeNode> nodes = new LinkedList<>();
+        addAllNodes(root, nodes);
+        return nodes;
+    }
+
+    /**
+     * delete node from the tree
+     * @param nodeToDelete to delete
+     * @return
+     */
     public RedBlackTreeNode delete(RedBlackTreeNode nodeToDelete) {
-        RedBlackTreeNode successor = (nodeToDelete.getLeftSon() instanceof NullRedBlackTreeNode || nodeToDelete.getRightSon() instanceof NullRedBlackTreeNode) ? nodeToDelete :  treePredccessor(nodeToDelete);
+        RedBlackTreeNode successor = (nodeToDelete.getLeftSon() instanceof NullRedBlackTreeNode || nodeToDelete.getRightSon() instanceof NullRedBlackTreeNode) ? nodeToDelete :  treePredecessor(nodeToDelete);
         RedBlackTreeNode successorSon = (!(successor.getLeftSon() instanceof NullRedBlackTreeNode)) ? successor.getLeftSon() : successor.getRightSon();
         successorSon.setParent(successor.getParent());
         if (successor.getParent() instanceof NullRedBlackTreeNode) {
@@ -99,6 +113,10 @@ public class RedBlackTree {
     }
 
 
+    /**
+     * rotate left the node in the tree
+     * @param x
+     */
     private void leftRotate(RedBlackTreeNode x) {
         RedBlackTreeNode y = x.getRightSon();
         x.setRightSon(y.getLeftSon());
@@ -113,6 +131,10 @@ public class RedBlackTree {
         x.setParent(y);
     }
 
+    /**
+     * rotate right the node in the tree
+     * @param x
+     */
     private void rightRotate(RedBlackTreeNode x) {
         RedBlackTreeNode y = x.getLeftSon();
         x.setLeftSon(y.getRightSon());
@@ -146,6 +168,10 @@ public class RedBlackTree {
         }
     }
 
+    /**
+     * fix the tree to be in the standards of RB tree after insertion
+     * @param z
+     */
     private void insertFixUp(RedBlackTreeNode z) {
         while (z.getParent().getColor() == Color.RED) {
             if (z.getParent() == z.getParent().getParent().getLeftSon()) {
@@ -186,10 +212,10 @@ public class RedBlackTree {
         root.setColor(Color.BLACK);
     }
 
-    private boolean isRightSon(RedBlackTreeNode z) {
-        return z == z.getParent().getRightSon();
-    }
-
+    /**
+     * fix the tree to be in the standards of RB tree after deletion
+     * @param x
+     */
     private void deleteFixUp(RedBlackTreeNode x) {
         while (x != root && x.getColor() == Color.BLACK) {
             if (isLeftSon(x)) {
@@ -247,11 +273,30 @@ public class RedBlackTree {
         x.setColor(Color.BLACK);
     }
 
+    /**
+     * checks if the node is rightSon of his father
+     * @param z
+     * @return
+     */
+    private boolean isRightSon(RedBlackTreeNode z) {
+        return z == z.getParent().getRightSon();
+    }
+
+    /**
+     * checks if the node is left son of his father
+     * @param x
+     * @return
+     */
     private boolean isLeftSon(RedBlackTreeNode x) {
         return x == x.getParent().getLeftSon();
     }
 
-    private RedBlackTreeNode treePredccessor(RedBlackTreeNode x) {
+    /**
+     * finds the node predecessor in the tree
+     * @param x
+     * @return
+     */
+    private RedBlackTreeNode treePredecessor(RedBlackTreeNode x) {
         if (x.getLeftSon() != null) {
             return treeMax(x.getLeftSon());
         }
@@ -265,6 +310,11 @@ public class RedBlackTree {
     }
 
 
+    /**
+     * find the max element in the tree
+     * @param x
+     * @return
+     */
     private RedBlackTreeNode treeMax(RedBlackTreeNode x) {
         if (!(x.getRightSon() instanceof NullRedBlackTreeNode)) {
             return treeMax(x.getRightSon());
@@ -273,31 +323,11 @@ public class RedBlackTree {
         }
     }
 
-    private RedBlackTreeNode treeSuccessor(RedBlackTreeNode x) {
-        if (!(x.getRightSon() instanceof NullRedBlackTreeNode)) {
-            return treeMinimum(x.getRightSon());
-        }
-        RedBlackTreeNode y = x.getParent();
-        while (!(y instanceof NullRedBlackTreeNode) && x == y.getRightSon()) {
-            x = y;
-            y = y.getParent();
-        }
-        return y;
-    }
-
-    private RedBlackTreeNode treeMinimum(RedBlackTreeNode x) {
-        while (!(x.getLeftSon() instanceof NullRedBlackTreeNode)) {
-            x = x.getLeftSon();
-        }
-        return x;
-    }
-
-    public List<RedBlackTreeNode> getAllNodes() {
-        List<RedBlackTreeNode> nodes = new LinkedList<>();
-        addAllNodes(root, nodes);
-        return nodes;
-    }
-
+    /**
+     * recursive function that adds all nodes sons to the list
+     * @param node
+     * @param listOfNodes
+     */
     private void addAllNodes(RedBlackTreeNode node, List<RedBlackTreeNode> listOfNodes) {
         if (node != null) {
             RedBlackTreeNode rightSon = node.getRightSon();
