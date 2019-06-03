@@ -4,8 +4,8 @@ public class RedBlackTreeNode {
 
     protected int key;
     protected Color color;
-    protected String value;
-    protected RedBlackTreeNode leftSon, rightSon, parent;
+    private String value;
+    private RedBlackTreeNode leftSon, rightSon, parent;
 
     public RedBlackTreeNode() {
         super();
@@ -14,14 +14,6 @@ public class RedBlackTreeNode {
     /**
      * constructor
      */
-    public RedBlackTreeNode(int key, Color color, String value, RedBlackTreeNode leftSon, RedBlackTreeNode rightSon, RedBlackTreeNode parent) {
-        this.color = color;
-        this.key = key;
-        this.value = value;
-        this.leftSon = leftSon;
-        this.rightSon = rightSon;
-        this.parent = parent;
-    }
 
     public RedBlackTreeNode(String value, int key) {
         this.value = value;

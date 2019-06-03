@@ -33,7 +33,6 @@ public class Main {
         List<RedBlackTreeNode> allNodes = tree.getAllNodes();
         for (RedBlackTreeNode node : allNodes) {
             if (dictionary.contains(node.getValue().toLowerCase())) {
-                System.out.println(node.getValue()+ " : key -" + node.getKey());
                 tree.delete(node);
             }
         }
