@@ -63,30 +63,30 @@ public class RedBlackTree {
      * Insert into the tree value.
      */
     public void insert(String value) {
-        RedBlackTreeNode z = new RedBlackTreeNode(value, this.treeSize);
-        RedBlackTreeNode y = new NullRedBlackTreeNode();
-        RedBlackTreeNode x = this.root;
-        while (!(x instanceof NullRedBlackTreeNode)) {
-            y = x;
-            x = (z.getKey() < x.getKey()) ? x.getLeftSon() : x.getRightSon();
+        RedBlackTreeNode redBlackTreeNode = new RedBlackTreeNode(value, this.treeSize);
+        RedBlackTreeNode nullRedBlackTreeNode = new NullRedBlackTreeNode();
+        RedBlackTreeNode root = this.root;
+        while (!(root instanceof NullRedBlackTreeNode)) {
+            nullRedBlackTreeNode = root;
+            root = (redBlackTreeNode.getKey() < root.getKey()) ? root.getLeftSon() : root.getRightSon();
         }
 
-        z.setParent(y);
+        redBlackTreeNode.setParent(nullRedBlackTreeNode);
 
-        if (y instanceof NullRedBlackTreeNode) {
-            this.root = z;
+        if (nullRedBlackTreeNode instanceof NullRedBlackTreeNode) {
+            this.root = redBlackTreeNode;
         } else {
-            if (z.getKey() < y.getKey()) {
-                y.setLeftSon(z);
+            if (redBlackTreeNode.getKey() < nullRedBlackTreeNode.getKey()) {
+                nullRedBlackTreeNode.setLeftSon(redBlackTreeNode);
             } else {
-                y.setRightSon(z);
+                nullRedBlackTreeNode.setRightSon(redBlackTreeNode);
             }
         }
 
-        z.setLeftSon(new NullRedBlackTreeNode());
-        z.setRightSon(new NullRedBlackTreeNode());
-        z.setColor(Color.RED);
-        insertFixUp(z);
+        redBlackTreeNode.setLeftSon(new NullRedBlackTreeNode());
+        redBlackTreeNode.setRightSon(new NullRedBlackTreeNode());
+        redBlackTreeNode.setColor(Color.RED);
+        insertFixUp(redBlackTreeNode);
     }
 
 
@@ -100,111 +100,111 @@ public class RedBlackTree {
     /**
      * Internal method to print a subtree in sorted order.
      *
-     * @param t the node that roots the tree.
+     * @param redBlackTreeNode the node that roots the tree.
      */
-    private void printTree(RedBlackTreeNode t) {
-        if (t instanceof NullRedBlackTreeNode) {
+    private void printTree(RedBlackTreeNode redBlackTreeNode) {
+        if (redBlackTreeNode instanceof NullRedBlackTreeNode) {
             return;
         }
 
-        printTree(t.getLeftSon());
-        System.out.println(t.getValue());
-        printTree(t.getRightSon());
+        printTree(redBlackTreeNode.getLeftSon());
+        System.out.println(redBlackTreeNode.getValue());
+        printTree(redBlackTreeNode.getRightSon());
     }
 
 
     /**
      * rotate left the node in the tree
-     * @param x
+     * @param redBlackTreeNode
      */
-    private void leftRotate(RedBlackTreeNode x) {
-        RedBlackTreeNode y = x.getRightSon();
-        x.setRightSon(y.getLeftSon());
-        if (!(y.getLeftSon() instanceof NullRedBlackTreeNode)) {
-            y.getLeftSon().setParent(x);
+    private void leftRotate(RedBlackTreeNode redBlackTreeNode) {
+        RedBlackTreeNode rightSon = redBlackTreeNode.getRightSon();
+        redBlackTreeNode.setRightSon(rightSon.getLeftSon());
+        if (!(rightSon.getLeftSon() instanceof NullRedBlackTreeNode)) {
+            rightSon.getLeftSon().setParent(redBlackTreeNode);
         }
-        y.setParent(x.getParent());
+        rightSon.setParent(redBlackTreeNode.getParent());
 
-        switchParentConnection(x, y);
+        switchParentConnection(redBlackTreeNode, rightSon);
 
-        y.setLeftSon(x);
-        x.setParent(y);
+        rightSon.setLeftSon(redBlackTreeNode);
+        redBlackTreeNode.setParent(rightSon);
     }
 
     /**
      * rotate right the node in the tree
-     * @param x
+     * @param redBlackTreeNode
      */
-    private void rightRotate(RedBlackTreeNode x) {
-        RedBlackTreeNode y = x.getLeftSon();
-        x.setLeftSon(y.getRightSon());
-        if (!(y.getRightSon() instanceof NullRedBlackTreeNode)) {
-            y.getRightSon().setParent(x);
+    private void rightRotate(RedBlackTreeNode redBlackTreeNode) {
+        RedBlackTreeNode leftSon = redBlackTreeNode.getLeftSon();
+        redBlackTreeNode.setLeftSon(leftSon.getRightSon());
+        if (!(leftSon.getRightSon() instanceof NullRedBlackTreeNode)) {
+            leftSon.getRightSon().setParent(redBlackTreeNode);
         }
 
-        y.setParent(x.getParent());
+        leftSon.setParent(redBlackTreeNode.getParent());
 
-        switchParentConnection(x, y);
-        y.setRightSon(x);
-        x.setParent(y);
+        switchParentConnection(redBlackTreeNode, leftSon);
+        leftSon.setRightSon(redBlackTreeNode);
+        redBlackTreeNode.setParent(leftSon);
 
     }
 
     /**
      * switches parent of x connection to x to be y
      *
-     * @param x node
-     * @param y node
+     * @param redBlackTreeNode node
+     * @param node node
      */
-    private void switchParentConnection(RedBlackTreeNode x, RedBlackTreeNode y) {
-        if (x.getParent() instanceof NullRedBlackTreeNode) {
-            this.root = y;
+    private void switchParentConnection(RedBlackTreeNode redBlackTreeNode, RedBlackTreeNode node) {
+        if (redBlackTreeNode.getParent() instanceof NullRedBlackTreeNode) {
+            this.root = node;
         } else {
-            if (isLeftSon(x)) {
-                x.getParent().setLeftSon(y);
+            if (isLeftSon(redBlackTreeNode)) {
+                redBlackTreeNode.getParent().setLeftSon(node);
             } else {
-                x.getParent().setRightSon(y);
+                redBlackTreeNode.getParent().setRightSon(node);
             }
         }
     }
 
     /**
      * fix the tree to be in the standards of RB tree after insertion
-     * @param z
+     * @param redBlackTreeNode
      */
-    private void insertFixUp(RedBlackTreeNode z) {
-        while (z.getParent().getColor() == Color.RED) {
-            if (z.getParent() == z.getParent().getParent().getLeftSon()) {
-                RedBlackTreeNode y = z.getParent().getParent().getRightSon();
-                if (y.getColor() == Color.RED) {
-                    z.getParent().setColor(Color.BLACK);
-                    y.setColor(Color.BLACK);
-                    z.getParent().getParent().setColor(Color.RED);
-                    z = z.getParent().getParent();
+    private void insertFixUp(RedBlackTreeNode redBlackTreeNode) {
+        while (redBlackTreeNode.getParent().getColor() == Color.RED) {
+            if (redBlackTreeNode.getParent() == redBlackTreeNode.getParent().getParent().getLeftSon()) {
+                RedBlackTreeNode rightSon = redBlackTreeNode.getParent().getParent().getRightSon();
+                if (rightSon.getColor() == Color.RED) {
+                    redBlackTreeNode.getParent().setColor(Color.BLACK);
+                    rightSon.setColor(Color.BLACK);
+                    redBlackTreeNode.getParent().getParent().setColor(Color.RED);
+                    redBlackTreeNode = redBlackTreeNode.getParent().getParent();
                 } else {
-                    if (isRightSon(z)) {
-                        z = z.getParent();
-                        leftRotate(z);
+                    if (isRightSon(redBlackTreeNode)) {
+                        redBlackTreeNode = redBlackTreeNode.getParent();
+                        leftRotate(redBlackTreeNode);
                     }
-                    z.getParent().setColor(Color.BLACK);
-                    z.getParent().getParent().setColor(Color.RED);
-                    rightRotate(z.getParent().getParent());
+                    redBlackTreeNode.getParent().setColor(Color.BLACK);
+                    redBlackTreeNode.getParent().getParent().setColor(Color.RED);
+                    rightRotate(redBlackTreeNode.getParent().getParent());
                 }
             } else {
-                RedBlackTreeNode y = z.getParent().getParent().getLeftSon();
-                if (y.getColor() == Color.RED) {
-                    z.getParent().setColor(Color.BLACK);
-                    y.setColor(Color.BLACK);
-                    z.getParent().getParent().setColor(Color.RED);
-                    z = z.getParent().getParent();
+                RedBlackTreeNode leftSon = redBlackTreeNode.getParent().getParent().getLeftSon();
+                if (leftSon.getColor() == Color.RED) {
+                    redBlackTreeNode.getParent().setColor(Color.BLACK);
+                    leftSon.setColor(Color.BLACK);
+                    redBlackTreeNode.getParent().getParent().setColor(Color.RED);
+                    redBlackTreeNode = redBlackTreeNode.getParent().getParent();
                 } else {
-                    if (isLeftSon(z)) {
-                        z = z.getParent();
-                        rightRotate(z);
+                    if (isLeftSon(redBlackTreeNode)) {
+                        redBlackTreeNode = redBlackTreeNode.getParent();
+                        rightRotate(redBlackTreeNode);
                     }
-                    z.getParent().setColor(Color.BLACK);
-                    z.getParent().getParent().setColor(Color.RED);
-                    leftRotate(z.getParent().getParent());
+                    redBlackTreeNode.getParent().setColor(Color.BLACK);
+                    redBlackTreeNode.getParent().getParent().setColor(Color.RED);
+                    leftRotate(redBlackTreeNode.getParent().getParent());
                 }
             }
         }
@@ -214,112 +214,112 @@ public class RedBlackTree {
 
     /**
      * fix the tree to be in the standards of RB tree after deletion
-     * @param x
+     * @param redBlackTreeNode
      */
-    private void deleteFixUp(RedBlackTreeNode x) {
-        while (x != root && x.getColor() == Color.BLACK) {
-            if (isLeftSon(x)) {
-                RedBlackTreeNode w = x.getParent().getRightSon();
+    private void deleteFixUp(RedBlackTreeNode redBlackTreeNode) {
+        while (redBlackTreeNode != root && redBlackTreeNode.getColor() == Color.BLACK) {
+            if (isLeftSon(redBlackTreeNode)) {
+                RedBlackTreeNode rightSon = redBlackTreeNode.getParent().getRightSon();
                 //case 1
-                if (w.getColor() == Color.RED) {
-                    w.setColor(Color.BLACK);
-                    x.getParent().setColor(Color.RED);
-                    leftRotate(x.getParent());
-                    w = x.getParent().getRightSon();
+                if (rightSon.getColor() == Color.RED) {
+                    rightSon.setColor(Color.BLACK);
+                    redBlackTreeNode.getParent().setColor(Color.RED);
+                    leftRotate(redBlackTreeNode.getParent());
+                    rightSon = redBlackTreeNode.getParent().getRightSon();
                 }
-                if (w.getLeftSon().getColor() == Color.BLACK && w.getRightSon().getColor() == Color.BLACK) {
-                    w.setColor(Color.RED);
-                    x = x.getParent();
+                if (rightSon.getLeftSon().getColor() == Color.BLACK && rightSon.getRightSon().getColor() == Color.BLACK) {
+                    rightSon.setColor(Color.RED);
+                    redBlackTreeNode = redBlackTreeNode.getParent();
                 } else {
-                    if (w.getRightSon().getColor() == Color.BLACK) {
-                        w.getLeftSon().setColor(Color.BLACK);
-                        w.setColor(Color.RED);
-                        rightRotate(w);
-                        w = x.getParent().getRightSon();
+                    if (rightSon.getRightSon().getColor() == Color.BLACK) {
+                        rightSon.getLeftSon().setColor(Color.BLACK);
+                        rightSon.setColor(Color.RED);
+                        rightRotate(rightSon);
+                        rightSon = redBlackTreeNode.getParent().getRightSon();
                     }
-                    w.setColor(x.getParent().getColor());
-                    x.getParent().setColor(Color.BLACK);
-                    w.getRightSon().setColor(Color.BLACK);
-                    leftRotate(x.getParent());
-                    x = root;
+                    rightSon.setColor(redBlackTreeNode.getParent().getColor());
+                    redBlackTreeNode.getParent().setColor(Color.BLACK);
+                    rightSon.getRightSon().setColor(Color.BLACK);
+                    leftRotate(redBlackTreeNode.getParent());
+                    redBlackTreeNode = root;
                 }
             } else {
-                RedBlackTreeNode w = x.getParent().getLeftSon();
+                RedBlackTreeNode leftSon = redBlackTreeNode.getParent().getLeftSon();
                 //case 1
-                if (w.getColor() == Color.RED) {
-                    w.setColor(Color.BLACK);
-                    x.getParent().setColor(Color.RED);
-                    rightRotate(x.getParent());
-                    w = x.getParent().getLeftSon();
+                if (leftSon.getColor() == Color.RED) {
+                    leftSon.setColor(Color.BLACK);
+                    redBlackTreeNode.getParent().setColor(Color.RED);
+                    rightRotate(redBlackTreeNode.getParent());
+                    leftSon = redBlackTreeNode.getParent().getLeftSon();
                 }
-                if (w.getRightSon().getColor() == Color.BLACK && w.getLeftSon().getColor() == Color.BLACK) {
-                    w.setColor(Color.RED);
-                    x = x.getParent();
+                if (leftSon.getRightSon().getColor() == Color.BLACK && leftSon.getLeftSon().getColor() == Color.BLACK) {
+                    leftSon.setColor(Color.RED);
+                    redBlackTreeNode = redBlackTreeNode.getParent();
                 } else {
-                    if (w.getLeftSon().getColor() == Color.BLACK) {
-                        w.getRightSon().setColor(Color.BLACK);
-                        w.setColor(Color.RED);
-                        leftRotate(w);
-                        w = x.getParent().getLeftSon();
+                    if (leftSon.getLeftSon().getColor() == Color.BLACK) {
+                        leftSon.getRightSon().setColor(Color.BLACK);
+                        leftSon.setColor(Color.RED);
+                        leftRotate(leftSon);
+                        leftSon = redBlackTreeNode.getParent().getLeftSon();
                     }
-                    w.setColor(x.getParent().getColor());
-                    x.getParent().setColor(Color.BLACK);
-                    w.getLeftSon().setColor(Color.BLACK);
-                    rightRotate(x.getParent());
-                    x = root;
+                    leftSon.setColor(redBlackTreeNode.getParent().getColor());
+                    redBlackTreeNode.getParent().setColor(Color.BLACK);
+                    leftSon.getLeftSon().setColor(Color.BLACK);
+                    rightRotate(redBlackTreeNode.getParent());
+                    redBlackTreeNode = root;
                 }
             }
         }
-        x.setColor(Color.BLACK);
+        redBlackTreeNode.setColor(Color.BLACK);
     }
 
     /**
      * checks if the node is rightSon of his father
-     * @param z
+     * @param redBlackTreeNode
      * @return
      */
-    private boolean isRightSon(RedBlackTreeNode z) {
-        return z == z.getParent().getRightSon();
+    private boolean isRightSon(RedBlackTreeNode redBlackTreeNode) {
+        return redBlackTreeNode == redBlackTreeNode.getParent().getRightSon();
     }
 
     /**
      * checks if the node is left son of his father
-     * @param x
+     * @param redBlackTreeNode
      * @return
      */
-    private boolean isLeftSon(RedBlackTreeNode x) {
-        return x == x.getParent().getLeftSon();
+    private boolean isLeftSon(RedBlackTreeNode redBlackTreeNode) {
+        return redBlackTreeNode == redBlackTreeNode.getParent().getLeftSon();
     }
 
     /**
      * finds the node predecessor in the tree
-     * @param x
+     * @param redBlackTreeNode
      * @return
      */
-    private RedBlackTreeNode treePredecessor(RedBlackTreeNode x) {
-        if (x.getLeftSon() != null) {
-            return treeMax(x.getLeftSon());
+    private RedBlackTreeNode treePredecessor(RedBlackTreeNode redBlackTreeNode) {
+        if (redBlackTreeNode.getLeftSon() != null) {
+            return treeMax(redBlackTreeNode.getLeftSon());
         }
-        RedBlackTreeNode y = x.getParent();
-        while (!(y instanceof NullRedBlackTreeNode) && x == y.getLeftSon()) {
-            x = y;
-            y = y.getParent();
+        RedBlackTreeNode parent = redBlackTreeNode.getParent();
+        while (!(parent instanceof NullRedBlackTreeNode) && redBlackTreeNode == parent.getLeftSon()) {
+            redBlackTreeNode = parent;
+            parent = parent.getParent();
         }
 
-        return y;
+        return parent;
     }
 
 
     /**
      * find the max element in the tree
-     * @param x
+     * @param redBlackTreeNode
      * @return
      */
-    private RedBlackTreeNode treeMax(RedBlackTreeNode x) {
-        if (!(x.getRightSon() instanceof NullRedBlackTreeNode)) {
-            return treeMax(x.getRightSon());
+    private RedBlackTreeNode treeMax(RedBlackTreeNode redBlackTreeNode) {
+        if (!(redBlackTreeNode.getRightSon() instanceof NullRedBlackTreeNode)) {
+            return treeMax(redBlackTreeNode.getRightSon());
         } else {
-            return x;
+            return redBlackTreeNode;
         }
     }
 
