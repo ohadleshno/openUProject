@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a16a567-ebda-4d6a-bb8a-6a3a250d95d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openUproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/openUproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/dataStructure/HashTable/HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/dataStructure/HashTable/HashTableException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/dataStructure/RedBlackTree/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/dataStructure/RedBlackTree/NullRedBlackTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/dataStructure/RedBlackTree/RedBlackTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/dataStructure/RedBlackTree/RedBlackTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/file/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/file/dict.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/file/myTextFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/openUproject/file/textFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructure/HashTable/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/dataStructure/HashTable/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructure/HashTable/HashTableException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/dataStructure/HashTable/HashTableException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructure/RedBlackTree/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructure/RedBlackTree/NullRedBlackTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/NullRedBlackTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/RedBlackTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/RedBlackTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/file/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/dict.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/myTextFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/myTextFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/textFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/textFile.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,20 +58,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dataStructure/HashTable/HashTable.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/HashTable/HashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructure/HashTable/HashTableException.java">
+        <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/HashTable/HashTableException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state>
+              <caret column="36" selection-start-column="13" selection-end-column="36" />
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#162#163#0" expanded="true" />
@@ -55,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+            <state relative-caret-position="374">
+              <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#removeWordsInTree#0;class#Main#0" />
@@ -69,41 +94,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTree.java">
+        <entry file="file://$PROJECT_DIR$/src/resource/dict.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="19" selection-end-line="20" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#RedBlackTree#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#getAllNodes#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#delete#0;class#RedBlackTree#0" />
-                <element signature="method#delete#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#insert#0;class#RedBlackTree#0" />
-                <element signature="method#insert#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#printTree#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#printTree#1;class#RedBlackTree#0" />
-                <element signature="method#printTree#1;class#RedBlackTree#0" />
-                <element signature="e#2797#2828#1" />
-                <element signature="docComment;method#leftRotate#0;class#RedBlackTree#0" />
-                <element signature="method#leftRotate#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#rightRotate#0;class#RedBlackTree#0" />
-                <element signature="method#rightRotate#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#switchParentConnection#0;class#RedBlackTree#0" />
-                <element signature="method#switchParentConnection#0;class#RedBlackTree#0" />
-                <element signature="method#insertFixUp#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#deleteFixUp#0;class#RedBlackTree#0" />
-                <element signature="method#deleteFixUp#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#treePredecessor#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#treeMax#0;class#RedBlackTree#0" />
-                <element signature="docComment;method#addAllNodes#0;class#RedBlackTree#0" />
-              </folding>
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/file/myTextFile.txt">
+        <entry file="file://$PROJECT_DIR$/src/resource/myTextFile.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="352" selection-start-column="352" selection-end-column="352" />
@@ -112,24 +112,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTreeNode.java">
+        <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/RedBlackTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="153">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
                 <element signature="e#949#950#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
                 <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
                 <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
                 <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
                 <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
                 <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1379#1380#0" expanded="true" />
                 <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
                 <element signature="e#1515#1516#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
                 <element signature="e#1605#1606#0" expanded="true" />
+                <element signature="e#1646#1647#0" expanded="true" />
                 <element signature="e#1680#1681#0" expanded="true" />
+                <element signature="e#1715#1716#0" expanded="true" />
                 <element signature="e#1745#1746#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
                 <element signature="e#1821#1822#0" expanded="true" />
               </folding>
             </state>
@@ -137,19 +147,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/Color.java">
+        <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/Color.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/file/FileUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/java/main/file/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="306">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,16 +173,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/NullRedBlackTreeNode.java">
+        <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/NullRedBlackTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -217,12 +221,19 @@
         <option value="$PROJECT_DIR$/src/dataStructure/RedBlackTreeNode.java" />
         <option value="$PROJECT_DIR$/src/dataStructure/RedBlackTree.java" />
         <option value="$PROJECT_DIR$/src/file/myTextFile.txt" />
-        <option value="$PROJECT_DIR$/src/dataStructure/RedBlackTree/Color.java" />
-        <option value="$PROJECT_DIR$/src/file/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/dataStructure/HashTable/HashTable.java" />
         <option value="$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTreeNode.java" />
         <option value="$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTree.java" />
+        <option value="$PROJECT_DIR$/src/datastructure/RedBlackTree/Color.java" />
+        <option value="$PROJECT_DIR$/src/datastructure/hashTable/HashTable.java" />
+        <option value="$PROJECT_DIR$/src/datastructure/hashTable/HashTableException.java" />
+        <option value="$PROJECT_DIR$/src/dataStructure/RedBlackTree/Color.java" />
+        <option value="$PROJECT_DIR$/src/file/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/java/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/java/main/file/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/java/main/Main.java" />
       </list>
     </option>
   </component>
@@ -242,39 +253,32 @@
         <subPane>
           <expand>
             <path>
-              <item name="openUproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openUproject" type="462c0819:PsiDirectoryNode" />
+              <item name="openUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openUProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="openUproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openUproject" type="462c0819:PsiDirectoryNode" />
+              <item name="openUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openUProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="openUproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openUproject" type="462c0819:PsiDirectoryNode" />
+              <item name="openUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openUProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="openUproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openUproject" type="462c0819:PsiDirectoryNode" />
+              <item name="openUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openUProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="HashTable" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="openUproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openUproject" type="462c0819:PsiDirectoryNode" />
+              <item name="openUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openUProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="RedBlackTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="openUproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openUproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,13 +290,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ohad\openu\openUProject\src\resource" />
+      <recent name="D:\ohad\openu\openUProject\src" />
       <recent name="$PROJECT_DIR$/src/file" />
     </key>
   </component>
@@ -308,9 +318,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="openUproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="java.Main" />
       <module name="openUproject" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -321,6 +344,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -341,17 +365,18 @@
       <workItem from="1559286737901" duration="315000" />
       <workItem from="1559287225461" duration="13278000" />
       <workItem from="1559489666617" duration="10625000" />
+      <workItem from="1561271229494" duration="4258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35924000" />
+    <option name="totallyTimeSpent" value="40182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.26979" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49927008" visible="true" weight="0.27427185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,8 +384,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5007299" side_tool="true" weight="0.2536349" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919093" weight="0.3277311" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.3277311" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,8 +394,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008091" side_tool="true" weight="0.3277311" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3277311" />
       <window_info anchor="bottom" id="Duplicates" order="13" weight="0.329927" />
       <window_info anchor="bottom" id="Extract Method" order="14" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -391,7 +416,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/java/main/Main.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="123" />
@@ -403,27 +428,9 @@
     <entry file="file://$PROJECT_DIR$/src/dict" />
     <entry file="file://$PROJECT_DIR$/out/production/openUproject/dict.txt" />
     <entry file="file://$PROJECT_DIR$/src/file/second text file" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="114" column="13" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/Serializable.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Throwable.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java" />
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -432,69 +439,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructure/HashEntry.java" />
     <entry file="file://$USER_HOME$/Downloads/BooksRedBlackTree.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21510">
-          <caret line="1512" column="53" selection-start-line="1512" selection-start-column="53" selection-end-line="1512" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StringLatin1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/dict.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/textFile.txt">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StringLatin1.java" />
+    <entry file="file://$PROJECT_DIR$/src/resource/textFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="183" lean-forward="true" selection-start-column="183" selection-end-column="183" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/myTextFile.txt">
+    <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/RedBlackTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="352" selection-start-column="352" selection-end-column="352" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openUproject.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#removeWordsInTree#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="19" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="306">
+          <caret line="20" column="4" selection-start-line="19" selection-end-line="20" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#RedBlackTree#0;class#RedBlackTree#0" />
@@ -506,7 +463,6 @@
             <element signature="docComment;method#printTree#0;class#RedBlackTree#0" />
             <element signature="docComment;method#printTree#1;class#RedBlackTree#0" />
             <element signature="method#printTree#1;class#RedBlackTree#0" />
-            <element signature="e#2797#2828#1" />
             <element signature="docComment;method#leftRotate#0;class#RedBlackTree#0" />
             <element signature="method#leftRotate#0;class#RedBlackTree#0" />
             <element signature="docComment;method#rightRotate#0;class#RedBlackTree#0" />
@@ -523,53 +479,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/NullRedBlackTreeNode.java">
+    <entry file="file://$PROJECT_DIR$/src/resource/myTextFile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="352" selection-start-column="352" selection-end-column="352" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/RedBlackTreeNode.java">
+    <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/RedBlackTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
             <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
             <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
             <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
             <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
             <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
             <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
             <element signature="e#1515#1516#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
             <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
             <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
             <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
             <element signature="e#1821#1822#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructure/RedBlackTree/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/openUproject.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructure/HashTable/HashTableException.java">
+    <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/HashTable/HashTableException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state>
+          <caret column="36" selection-start-column="13" selection-end-column="36" />
           <folding>
             <element signature="e#132#133#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
@@ -577,12 +533,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructure/HashTable/HashTable.java">
+    <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/NullRedBlackTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/RedBlackTree/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resoruce.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/dataStructure/HashTable/HashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/file/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#removeWordsInTree#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

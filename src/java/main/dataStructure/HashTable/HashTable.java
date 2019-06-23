@@ -1,4 +1,4 @@
-package dataStructure.HashTable;
+package main.dataStructure.HashTable;
 
 public class HashTable {
 
@@ -41,9 +41,9 @@ public class HashTable {
 
 
     /**
-     * insert key into the hashTable
+     * insert key into the HashTable
      * @param key
-     * @throws HashTableException if no more space in the hashTable
+     * @throws HashTableException if no more space in the HashTable
      */
     public void insert(String key) throws HashTableException {
         int i = 0;

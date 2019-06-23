@@ -1,4 +1,4 @@
-package dataStructure.RedBlackTree;
+package main.dataStructure.RedBlackTree;
 
 public class NullRedBlackTreeNode extends RedBlackTreeNode {
     public NullRedBlackTreeNode() {

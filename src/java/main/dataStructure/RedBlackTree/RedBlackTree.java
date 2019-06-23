@@ -1,4 +1,4 @@
-package dataStructure.RedBlackTree;
+package main.dataStructure.RedBlackTree;
 
 import java.util.LinkedList;
 import java.util.List;
